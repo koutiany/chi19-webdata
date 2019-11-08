@@ -3,6 +3,10 @@
 
   <head>
 
+    <!-- d3js help thingy -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -56,7 +60,7 @@
         </div>
       </div>
     </nav>
-   
+
     <section class="page-section about-heading">
       <div class="container">
         <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
@@ -65,12 +69,38 @@
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">England & Wales</span>
-                  <span class="section-heading-lower">About Our Team</span>
+                  <span class="section-heading-upper">Data</span>
+                  <span class="section-heading-lower">Wow!</span>
                 </h2>
-                <p>Intro for our team members</p>
-                <p class="mb-0">Dani is an anthropologist whose ethnographies of orks, witches, elves, and chimera are the go-to sources for all things magical. She specializes in Elvish translation and chimera-unicorn relations. Her work has spawned a number of copycat works, including: To Live & Die in the Forbidden Forest, Unicorn Envy, and, of course, The Ork Trial of 1572: Ork Lord's Revenge.
+                <p>Let's see! Shall we?</p>
+                <p class="mb-0"> How big are they?
                 </p>
+                <div class="container">
+                  <script type="text/javascript">
+                  var svg = dimple.newSvg("body", 800, 600);
+                  var data = [
+                  { "Date":"Peak District", "Area":1438 },
+                  { "Date":"Lake District", "Area":2292 },
+                  { "Date":"Snowdonia", "Area":2142 },
+                  { "Date":"Dartmoor", "Area":956 },
+                  { "Date":"Pembrokeshire", "Area":620 },
+                  { "Date":"North York Moors", "Area":1436 },
+                  { "Date":"Yorkshire Dales", "Area":2179 },
+                  { "Date":"Exmoor", "Area":693 },
+                  { "Date":"Northumberland", "Area":1049 },
+                  { "Date":"Brecon Beacons", "Area":1351 },
+                  { "Date":"The Broads", "Area":303},
+                  { "Date":"New Forest", "Area":580 },
+                  { "Date":"South Downs", "Area":1641 }
+                  ];
+                  var chart = new dimple.chart(svg, data);
+                  chart.addCategoryAxis("x", "Date");
+                  chart.addMeasureAxis("y", "Area");
+                  chart.addSeries(null, dimple.plot.bar);
+                  chart.draw();
+                  </script>
+                </div>
+
               </div>
             </div>
           </div>
