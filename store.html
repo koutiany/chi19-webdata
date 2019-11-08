@@ -92,22 +92,22 @@
         <script type="text/javascript">
         var svg = dimple.newSvg("body", 800, 600);
         var data = [
-        { "Date":"Peak District", "Area":1438 },
-        { "Date":"Lake District", "Area":2292 },
-        { "Date":"Snowdonia", "Area":2142 },
-        { "Date":"Dartmoor", "Area":956 },
-        { "Date":"Pembrokeshire", "Area":620 },
-        { "Date":"North York Moors", "Area":1436 },
-        { "Date":"Yorkshire Dales", "Area":2179 },
-        { "Date":"Exmoor", "Area":693 },
-        { "Date":"Northumberland", "Area":1049 },
-        { "Date":"Brecon Beacons", "Area":1351 },
-        { "Date":"The Broads", "Area":303},
-        { "Date":"New Forest", "Area":580 },
-        { "Date":"South Downs", "Area":1641 }
+        { "Name":"Peak District", "Area":1438 },
+        { "Name":"Lake District", "Area":2292 },
+        { "Name":"Snowdonia", "Area":2142 },
+        { "Name":"Dartmoor", "Area":956 },
+        { "Name":"Pembrokeshire", "Area":620 },
+        { "Name":"North York Moors", "Area":1436 },
+        { "Name":"Yorkshire Dales", "Area":2179 },
+        { "Name":"Exmoor", "Area":693 },
+        { "Name":"Northumberland", "Area":1049 },
+        { "Name":"Brecon Beacons", "Area":1351 },
+        { "Name":"The Broads", "Area":303},
+        { "Name":"New Forest", "Area":580 },
+        { "Name":"South Downs", "Area":1641 }
         ];
         var chart = new dimple.chart(svg, data);
-        chart.addCategoryAxis("x", "Date");
+        chart.addCategoryAxis("x", "Name");
         chart.addMeasureAxis("y", "Area");
         chart.addSeries(null, dimple.plot.bar);
         chart.draw();
