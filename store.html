@@ -76,29 +76,7 @@
                 <p class="mb-0"> How big are they?
                 </p>
 
-                  <script type="text/javascript">
-                  var svg = dimple.newSvg("body", 800, 600);
-                  var data = [
-                  { "Date":"Peak District", "Area":1438 },
-                  { "Date":"Lake District", "Area":2292 },
-                  { "Date":"Snowdonia", "Area":2142 },
-                  { "Date":"Dartmoor", "Area":956 },
-                  { "Date":"Pembrokeshire", "Area":620 },
-                  { "Date":"North York Moors", "Area":1436 },
-                  { "Date":"Yorkshire Dales", "Area":2179 },
-                  { "Date":"Exmoor", "Area":693 },
-                  { "Date":"Northumberland", "Area":1049 },
-                  { "Date":"Brecon Beacons", "Area":1351 },
-                  { "Date":"The Broads", "Area":303},
-                  { "Date":"New Forest", "Area":580 },
-                  { "Date":"South Downs", "Area":1641 }
-                  ];
-                  var chart = new dimple.chart(svg, data);
-                  chart.addCategoryAxis("x", "Date");
-                  chart.addMeasureAxis("y", "Area");
-                  chart.addSeries(null, dimple.plot.bar);
-                  chart.draw();
-                  </script>
+
 
 
               </div>
@@ -107,6 +85,35 @@
         </div>
       </div>
     </section>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <script type="text/javascript">
+        var svg = dimple.newSvg("body", 800, 600);
+        var data = [
+        { "Date":"Peak District", "Area":1438 },
+        { "Date":"Lake District", "Area":2292 },
+        { "Date":"Snowdonia", "Area":2142 },
+        { "Date":"Dartmoor", "Area":956 },
+        { "Date":"Pembrokeshire", "Area":620 },
+        { "Date":"North York Moors", "Area":1436 },
+        { "Date":"Yorkshire Dales", "Area":2179 },
+        { "Date":"Exmoor", "Area":693 },
+        { "Date":"Northumberland", "Area":1049 },
+        { "Date":"Brecon Beacons", "Area":1351 },
+        { "Date":"The Broads", "Area":303},
+        { "Date":"New Forest", "Area":580 },
+        { "Date":"South Downs", "Area":1641 }
+        ];
+        var chart = new dimple.chart(svg, data);
+        chart.addCategoryAxis("x", "Date");
+        chart.addMeasureAxis("y", "Area");
+        chart.addSeries(null, dimple.plot.bar);
+        chart.draw();
+        </script>
+      </div>
+    </section>
+
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
